@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PC Speaker Controller</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🔊 PC Speaker Controller</h1>
+
+        <p>Choose a sound to play through your PC speaker.</p>
+
+        <button onclick="playSound('notification')">
+            🔔 Notification
+        </button>
+
+        <button onclick="playSound('alert')">
+            🚨 Alert
+        </button>
+
+        <button onclick="playSound('earthquake')">
+            👋 Earthquake
+        </button>
+
+        <button onclick="stopSound()">
+            ⏹ Stop
+        </button>
+
+        
+<!-- Text to Speech Section -->
+
+<div class="text-to-speech">
+
+    <h2>Text to Speech</h2>
+
+    <textarea
+        id="speechText"
+        placeholder="Type your message here..."
+        rows="5"
+    ></textarea>
+
+    <label for="voiceSelect">Voice:</label>
+
+<select id="voiceSelect">
+    <option value="">Loading voices...</option>
+</select>
+
+    <button onclick="speakText()">
+        🔊 Convert to Speech
+    </button>
+
+    <button onclick="stopSpeech()">
+        ⏹ Stop Speech
+    </button>
+
+</div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
